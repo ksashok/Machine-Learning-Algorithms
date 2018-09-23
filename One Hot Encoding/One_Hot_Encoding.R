@@ -22,4 +22,3 @@ titanic$Class <- NULL
 #Combining the dataframe with one hot encoded column
 titanic <- cbind(titanic,one_hot_df)
 
-#This can be extended by calling all columns
