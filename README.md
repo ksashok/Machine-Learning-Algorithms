@@ -2,6 +2,8 @@
 
 ## Regression
 
+* [Linear Regression](https://github.com/ksashok/Machine-Learning-Algorithms/tree/master/Linear%20Regression)
+
 * [K Nearest Neighbor Regression (KNN Regression)](https://github.com/ksashok/Machine-Learning-Algorithms/tree/master/KNN%20Regressor)
 
 
