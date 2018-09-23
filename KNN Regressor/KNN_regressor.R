@@ -15,3 +15,4 @@ knn <- function(train.data, train.label, test.data, K){
   }
   return(pred.label)
 }
+
