@@ -7,5 +7,10 @@
 
 
 
+## Other Algorithms
+* [One Hot Encoding](https://github.com/ksashok/Machine-Learning-Algorithms/tree/master/One%20Hot%20Encoding)
+
+
+
 
 I'll keep adding new algorithms as I learn.
