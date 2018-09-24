@@ -11,6 +11,7 @@
 
 ## Other Algorithms
 * [One Hot Encoding](https://github.com/ksashok/Machine-Learning-Algorithms/tree/master/One%20Hot%20Encoding)
+* [TF-IDF](https://github.com/ksashok/Machine-Learning-Algorithms/tree/master/TF-IDF)
 
 
 
