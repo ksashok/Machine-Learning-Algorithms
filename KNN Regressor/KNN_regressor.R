@@ -16,3 +16,28 @@ knn <- function(train.data, train.label, test.data, K){
   return(pred.label)
 }
 
+#Predicting by calling the model
+data(mtcars)
+
+## Splitting the data into train and test with train having 80%
+smp_size <- floor(0.8 * nrow(mtcars))
+
+#Creating the train index
+train_ind <- sample(seq_len(nrow(mtcars)), size = smp_size)
+
+#Splitting the data into train and test
+train <- mtcars[train_ind, ]
+test <- mtcars[-train_ind, ]
+
+#Splitting the columns into x and y for train and test
+train.x <- train[,c(2,3,4)]
+train.y <- train[,1,drop=FALSE]
+
+test.x <- test[,c(2,3,4)]
+test.y <- test[,1,drop=FALSE]
+
+pred.y <- knn(train.x, train.y, test.x,5)
+
+#Finding the mean square error
+mse <- mean((pred.y - test.y)^2)
+mse
