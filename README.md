@@ -2,7 +2,7 @@
 
 ## Regression
 
-* [Linear Regression](https://github.com/ksashok/Machine-Learning-Algorithms/tree/master/Linear%20Regression)
+* [Linear Regression by Normal Equation](https://github.com/ksashok/Machine-Learning-Algorithms/blob/master/Linear%20Regression/Linear_Regression_Normal_Equation.R)
 
 * [K Nearest Neighbor Regression (KNN Regression)](https://github.com/ksashok/Machine-Learning-Algorithms/tree/master/KNN%20Regressor)
 
