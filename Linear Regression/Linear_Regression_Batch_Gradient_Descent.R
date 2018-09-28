@@ -46,6 +46,10 @@ bgd <- function(train.data,train.label,test.data,test.label,tau.max,eta,epsilon)
   return(W[tau,])
 }
 
+## 80% of the sample size
+smp_size <- floor(0.8 * nrow(mtcars))
+
+train_ind <- sample(seq_len(nrow(mtcars)), size = smp_size)
 
 train <- mtcars[train_ind, ]
 test <- mtcars[-train_ind, ]
@@ -60,7 +64,6 @@ test.y <- test[,1,drop=FALSE]
 tau.max <- 18 * nrow(train.x) # maximum number of iterations
 eta <- 0.01 # learning rate
 epsilon <- 0.1 # a threshold on the cost (to terminate the process)
-lambda <- 0.5 # Regression Cofficient
 
 #Calling the function
 theta <- bgd(train.x,train.y,test.x,test.y,tau.max,eta,epsilon)
